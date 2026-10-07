@@ -1,104 +1,102 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>SPIDER-VERSE: Web of Shadows - Marvel Web Story</title>
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;800&family=Bangers&family=Permanent+Marker&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="mystyle.css">
-	<style>
-		.hero {
-			position: relative;
-			overflow: hidden;
-			padding: 70px 40px 80px;
-			text-align: center;
-			color: white;
-			background-color: var(--red);
-			border-bottom: 8px solid var(--ink);
-		}
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SPIDER-VERSE: Web of Shadows - Marvel Web Story</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;800&family=Bangers&family=Permanent+Marker&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="mystyle.css">
+  <style>
+    .hero {
+      position: relative;
+      overflow: hidden;
+      padding: 70px 40px 80px;
+      text-align: center;
+      color: white;
+      background-color: #e5192f;
+      border-bottom: 8px solid #111111;
+    }
 
-		.hero::before {
-			content: "";
-			position: absolute;
-			left: -10%;
-			right: -10%;
-			bottom: -40%;
-			height: 60%;
-			background-color: var(--blue);
-			transform: skewY(-6deg);
-			z-index: 0;
-		}
+    .hero::before {
+      content: "";
+      position: absolute;
+      left: -10%;
+      right: -10%;
+      bottom: -40%;
+      height: 60%;
+      background-color: #1e3cff;
+      transform: skewY(-6deg);
+      z-index: 0;
+    }
 
-		.hero h1, .hero p, .hero .cta {
-			position: relative;
-			z-index: 1;
-		}
+    .hero h1, .hero p, .hero .cta {
+      position: relative;
+      z-index: 1;
+    }
 
-		.hero h1 {
-			margin: 0;
-			font-size: 9rem;
-			color: var(--yellow);
-			-webkit-text-stroke: 3px var(--ink);
-			text-shadow: 7px 7px 0 var(--ink);
-			transform: rotate(-2deg);
-			animation: slam 0.7s cubic-bezier(.2,1.6,.4,1);
-		}
+    .hero h1 {
+      margin: 0;
+      font-size: 9rem;
+      color: #ffe500;
+      -webkit-text-stroke: 3px #111111;
+      text-shadow: 7px 7px 0 #111111;
+      transform: rotate(-2deg);
+      animation: slam 0.7s cubic-bezier(.2,1.6,.4,1);
+    }
 
-		@keyframes slam {
-			from {
-				transform: scale(2.4) rotate(-12deg);
-				opacity: 0;
-			}
-			to {
-				transform: scale(1) rotate(-2deg);
-				opacity: 1;
-			}
-		}
+    @keyframes slam {
+      from {
+        transform: scale(2.4) rotate(-12deg);
+        opacity: 0;
+      }
+      to {
+        transform: scale(1) rotate(-2deg);
+        opacity: 1;
+      }
+    }
 
-		.hero p {
-			max-width: 52ch;
-			margin: 18px auto 22px;
-			font-weight: 800;
-			font-size: 1.1rem;
-			text-shadow: 2px 2px 0 var(--ink);
-		}
+    .hero p {
+      max-width: 52ch;
+      margin: 18px auto 22px;
+      font-weight: 800;
+      font-size: 1.1rem;
+      text-shadow: 2px 2px 0 #111111;
+    }
 
-		.cta {
-			display: inline-block;
-			padding: 10px 28px;
-			background-color: var(--yellow);
-			color: var(--ink);
-			border: 5px solid var(--ink);
-			box-shadow: 6px 6px 0 var(--ink);
-			font-family: "Bangers", Impact, sans-serif;
-			font-size: 1.6rem;
-			letter-spacing: 2px;
-			text-decoration: none;
-		}
+    .cta {
+      display: inline-block;
+      padding: 10px 28px;
+      background-color: #ffe500;
+      color: #111111;
+      border: 5px solid #111111;
+      box-shadow: 6px 6px 0 #111111;
+      font-family: "Bangers", Impact, sans-serif;
+      font-size: 1.6rem;
+      letter-spacing: 2px;
+      text-decoration: none;
+    }
 
-		.cta:hover {
-			background-color: #fff;
-			transform: translate(-3px, -3px);
-		}
+    .cta:hover {
+      background-color: #fff;
+    }
 
-		.hero .burst {
-			position: absolute;
-			top: 18px;
-			right: 40px;
-			z-index: 1;
-			transform: rotate(12deg);
-		}
+    .hero .burst {
+      position: absolute;
+      top: 18px;
+      right: 40px;
+      transform: rotate(12deg);
+    }
 
-		@media (max-width: 900px) {
-			.hero h1 { font-size: 5.5rem; }
-		}
+    @media (max-width: 900px) {
+      .hero h1 { font-size: 5.5rem; }
+    }
 
-		@media (max-width: 500px) {
-			.hero h1 { font-size: 3.4rem; }
-		}
+    @media (max-width: 500px) {
+      .hero h1 { font-size: 3.4rem; }
+    }
 
-	</style>
+  </style>
 </head>
 
 <body>
@@ -125,29 +123,27 @@
   </div>
 
   <div class="ticker">
-    <center>
       <span>
       BLACKOUT SEES YOU &#9733; EARTH-616 &#9733; EARTH-1610 &#9733; GLITCH-VERSE &#9733; WITH GREAT POWER &#9733;
     </span>
-    </center>
   </div>
 
   <div class="film" id="film">
     <figure class="frame">
       <div class="still">
-        <img src="https://cdn.pixabay.com/photo/2016/05/19/15/20/spiderman-1403170_1280.jpg" alt="Spider-Man crouching on a rooftop at night, movie still" width="640" height="360">
+        <img src="https://cdn.pixabay.com/photo/2016/05/19/15/20/spiderman-1403170_1280.jpg" alt="Spider-Man crouching on a rooftop at night" width="640" height="360">
       </div>
       <figcaption>Spiderman. Image: (&copy;Pixabay)</figcaption>
     </figure>
     <figure class="frame">
       <div class="still">
-        <img src="https://cdn.pixabay.com/photo/2017/05/14/22/32/spiderman-2313262_1280.png" alt="Spider-Man swinging between city buildings, movie still" width="640" height="360">
+        <img src="https://cdn.pixabay.com/photo/2017/05/14/22/32/spiderman-2313262_1280.png" alt="Spider-Man swinging between city buildings" width="640" height="360">
       </div>
       <figcaption>Spider. Image: (&copy;Pixabay)</figcaption>
     </figure>
     <figure class="frame">
       <div class="still">
-        <img src="https://images.pexels.com/photos/38575990/pexels-photo-38575990.jpeg?_gl=1*48ryxy*_ga*MTcxMzA1Mzc1OC4xNzc3NTE2MjU4*_ga_8JE65Q40S6*czE3OTEzMzc3MDAkbzUkZzEkdDE3OTEzMzgyODYkajUwJGwwJGgw" alt="Spider-Verse style multiverse scene, movie still" width="640" height="360">
+        <img src="https://images.pexels.com/photos/38575990/pexels-photo-38575990.jpeg?_gl=1*48ryxy*_ga*MTcxMzA1Mzc1OC4xNzc3NTE2MjU4*_ga_8JE65Q40S6*czE3OTEzMzc3MDAkbzUkZzEkdDE3OTEzMzgyODYkajUwJGwwJGgw" alt="Spider-Verse style multiverse scene" width="640" height="360">
       </div>
       <figcaption>Spiderman. Image: (&copy;Pexels)</figcaption>
     </figure>
@@ -167,14 +163,14 @@
           <h3>Rooftop Chase</h3>
           <p>Cameras blame <strong>Venom</strong>. Peter corners him, but the antihero will not fight. He slides over a burnt data drive.</p>
           <figure class="still-box">
-            <img src="https://cdn.pixabay.com/photo/2014/11/03/13/33/spiderman-515215_1280.jpg" alt="Spider-Man facing a dark antihero, movie still" width="600" height="450">
+            <img src="https://cdn.pixabay.com/photo/2014/11/03/13/33/spiderman-515215_1280.jpg" alt="Spider-Man facing a dark antihero" width="600" height="450">
           </figure>
         </article>
         <article class="panel" data-cap="ENTER: MILES">
           <h3>New Kid</h3>
           <p>A portal glitches open and <strong>Miles Morales</strong> drops in from Earth-1610, catching the drive mid-air.</p>
           <figure class="still-box">
-            <img src="https://cdn.pixabay.com/photo/2024/02/14/13/44/ai-generated-8573475_1280.png" alt="Miles Morales in a spider suit, movie still" width="600" height="450">
+            <img src="https://cdn.pixabay.com/photo/2024/02/14/13/44/ai-generated-8573475_1280.png" alt="Miles Morales in a spider suit" width="600" height="450">
           </figure>
         </article>
         <article class="panel" data-cap="PAGE 2">
@@ -211,7 +207,7 @@
       <h2 class="glitch">The Twist</h2>
       <p>Everything you were told about Venom and KAREN is wrong.</p>
       <figure class="twist-still">
-        <img src="https://images.unsplash.com/photo-1760954185931-40d5b65fbb86?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Wide cinematic Spider-Man scene with glitch effect, movie still" width="1680" height="720">
+        <img src="https://images.unsplash.com/photo-1760954185931-40d5b65fbb86?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Wide cinematic Spider-Man scene with glitch effect" width="1680" height="720">
         <figcaption>Image: Spider-Man at Lucca Comics 2024. (&copy; Unsplash)</figcaption>
       </figure>
       <details>
