@@ -110,6 +110,14 @@ summary:focus {
   text-align: center;
 }
 
+.ticker span {
+  display: inline-block;
+  padding: 8px 0;
+  font-family: "Bangers", Impact, sans-serif;
+  font-size: 1.3rem;
+  letter-spacing: 3px;
+}
+
 main section {
   max-width: 1120px;
   margin: 0 auto;
