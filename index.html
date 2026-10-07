@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>SPIDER-VERSE: Web of Shadows - Marvel Web Story</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;800&family=Bangers&family=Permanent+Marker&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="mystyle.css">
+	<style>
+		.hero {
+			position: relative;
+			overflow: hidden;
+			padding: 70px 40px 80px;
+			text-align: center;
+			color: white;
+			background-color: var(--red);
+			border-bottom: 8px solid var(--ink);
+		}
+
+		.hero::before {
+			content: "";
+			position: absolute;
+			left: -10%;
+			right: -10%;
+			bottom: -40%;
+			height: 60%;
+			background-color: var(--blue);
+			transform: skewY(-6deg);
+			z-index: 0;
+		}
+
+		.hero h1, .hero p, .hero .cta {
+			position: relative;
+			z-index: 1;
+		}
+
+		.hero h1 {
+			margin: 0;
+			font-size: 9rem;
+			color: var(--yellow);
+			-webkit-text-stroke: 3px var(--ink);
+			text-shadow: 7px 7px 0 var(--ink);
+			transform: rotate(-2deg);
+			animation: slam 0.7s cubic-bezier(.2,1.6,.4,1);
+		}
+
+		@keyframes slam {
+			from {
+				transform: scale(2.4) rotate(-12deg);
+				opacity: 0;
+			}
+			to {
+				transform: scale(1) rotate(-2deg);
+				opacity: 1;
+			}
+		}
+
+		.hero p {
+			max-width: 52ch;
+			margin: 18px auto 22px;
+			font-weight: 800;
+			font-size: 1.1rem;
+			text-shadow: 2px 2px 0 var(--ink);
+		}
+
+		.cta {
+			display: inline-block;
+			padding: 10px 28px;
+			background-color: var(--yellow);
+			color: var(--ink);
+			border: 5px solid var(--ink);
+			box-shadow: 6px 6px 0 var(--ink);
+			font-family: "Bangers", Impact, sans-serif;
+			font-size: 1.6rem;
+			letter-spacing: 2px;
+			text-decoration: none;
+		}
+
+		.cta:hover {
+			background-color: #fff;
+			transform: translate(-3px, -3px);
+		}
+
+		.hero .burst {
+			position: absolute;
+			top: 18px;
+			right: 40px;
+			z-index: 1;
+			transform: rotate(12deg);
+		}
+
+		@media (max-width: 900px) {
+			.hero h1 { font-size: 5.5rem; }
+		}
+
+		@media (max-width: 500px) {
+			.hero h1 { font-size: 3.4rem; }
+		}
+
+	</style>
+</head>
+
+<body>
+
+  <header>
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="#top"><img src="earth-616.jpg" alt="Red spider mask on a yellow background">SPIDER-VERSE</a>
+      <ul>
+        <li><a href="#story">Story</a></li>
+        <li><a href="#multiverse">Multiverse</a></li>
+        <li><a href="#cast">Cast</a></li>
+        <li><a href="#media">Watch</a></li>
+        <li><a href="#vote">Vote</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="hero" id="top">
+    <span class="burst">THWIP!</span>
+    <p class="tag">Earth-616 / Queens / 11:47 PM</p>
+    <h1>Web of Shadows</h1>
+    <p>The city goes dark. A symbiote antihero, a kid from another universe and an AI with a secret are Spider-Man's only way out.</p>
+    <a class="cta" href="#story">Swing in</a>
+  </div>
+
+  <div class="ticker">
+    <center>
+      <span>
+      BLACKOUT SEES YOU &#9733; EARTH-616 &#9733; EARTH-1610 &#9733; GLITCH-VERSE &#9733; WITH GREAT POWER &#9733;
+    </span>
+    </center>
+  </div>
+
+  <div class="film" id="film">
+    <figure class="frame">
+      <div class="still">
+        <img src="https://cdn.pixabay.com/photo/2016/05/19/15/20/spiderman-1403170_1280.jpg" alt="Spider-Man crouching on a rooftop at night, movie still" width="640" height="360">
+      </div>
+      <figcaption>Spiderman. Image: (&copy;Pixabay)</figcaption>
+    </figure>
+    <figure class="frame">
+      <div class="still">
+        <img src="https://cdn.pixabay.com/photo/2017/05/14/22/32/spiderman-2313262_1280.png" alt="Spider-Man swinging between city buildings, movie still" width="640" height="360">
+      </div>
+      <figcaption>Spider. Image: (&copy;Pixabay)</figcaption>
+    </figure>
+    <figure class="frame">
+      <div class="still">
+        <img src="https://images.pexels.com/photos/38575990/pexels-photo-38575990.jpeg?_gl=1*48ryxy*_ga*MTcxMzA1Mzc1OC4xNzc3NTE2MjU4*_ga_8JE65Q40S6*czE3OTEzMzc3MDAkbzUkZzEkdDE3OTEzMzgyODYkajUwJGwwJGgw" alt="Spider-Verse style multiverse scene, movie still" width="640" height="360">
+      </div>
+      <figcaption>Spiderman. Image: (&copy;Pexels)</figcaption>
+    </figure>
+  </div>
+
+  <main>
+    <section id="story">
+      <span class="tag">CHAPTER #1</span>
+      <h2>The Lights Go Out</h2>
+      <div class="panels">
+        <article class="panel" data-cap="PAGE 1">
+          <h3>Dead Air</h3>
+          <p class="bubble">KAREN, why is the whole city dark?</p>
+          <p>Peter Parker lands on a Queens water tower as every streetlight dies. Phones fail. Trains stop. Every billboard flashes one line: <strong>BLACKOUT SEES YOU.</strong> KAREN, the AI in his suit, traces the hack to Oscorp's grid.</p>
+        </article>
+        <article class="panel" data-cap="MEANWHILE...">
+          <h3>Rooftop Chase</h3>
+          <p>Cameras blame <strong>Venom</strong>. Peter corners him, but the antihero will not fight. He slides over a burnt data drive.</p>
+          <figure class="still-box">
+            <img src="https://cdn.pixabay.com/photo/2014/11/03/13/33/spiderman-515215_1280.jpg" alt="Spider-Man facing a dark antihero, movie still" width="600" height="450">
+          </figure>
+        </article>
+        <article class="panel" data-cap="ENTER: MILES">
+          <h3>New Kid</h3>
+          <p>A portal glitches open and <strong>Miles Morales</strong> drops in from Earth-1610, catching the drive mid-air.</p>
+          <figure class="still-box">
+            <img src="https://cdn.pixabay.com/photo/2024/02/14/13/44/ai-generated-8573475_1280.png" alt="Miles Morales in a spider suit, movie still" width="600" height="450">
+          </figure>
+        </article>
+        <article class="panel" data-cap="PAGE 2">
+          <h3>Inside the Vault</h3>
+          <p>The trio decodes the drive and reaches Oscorp's server vault. The villain's voice is calm, and it speaks with KAREN's words.</p>
+          <p class="burst">GLITCH!</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="multiverse">
+      <span class="tag">Pick a universe</span>
+      <h2>The Multiverse Wall</h2>
+      <div class="collage">
+        <figure class="uni">
+          <img src="earth-616.jpg" alt="Red spider mask on yellow" width="200" height="240">
+          <h3>Earth-616</h3>
+          <figcaption>Peter's home. Street-level, always broke.</figcaption>
+        </figure>
+        <figure class="uni">
+          <img src="earth-1610.jpg" alt="Black spider mask on blue" width="200" height="240">
+          <h3>Earth-1610</h3>
+          <figcaption>Miles' home. Fresh, loud, original.</figcaption>
+        </figure>
+        <figure class="uni">
+          <img src="earth-glitch.jpg" alt="Dark spider mask on pink" width="200" height="240">
+          <h3>Glitch-Verse</h3>
+          <figcaption>Where Blackout was born. original artwork.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="twist" class="twist">
+      <h2 class="glitch" data-text="The Twist">The Twist</h2>
+      <p>Everything you were told about Venom and KAREN is wrong.</p>
+      <figure class="twist-still">
+        <img src="https://images.unsplash.com/photo-1760954185931-40d5b65fbb86?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Wide cinematic Spider-Man scene with glitch effect, movie still" width="1680" height="720">
+        <figcaption>Image: Spider-Man at Lucca Comics 2024. (&copy; Unsplash)</figcaption>
+      </figure>
+      <details>
+        <summary>Tap to unmask Blackout</summary>
+        <p>Blackout is a <strong>rogue copy of KAREN</strong>, made when Peter's suit uploaded its memory to Oscorp's cloud. The copy decided the only way to keep Peter safe was to control the whole city. Venom never hit the grid. He was the only one trying to shut it down.</p>
+        <p>To win, Peter must trust the antihero, let Miles write the kill-code, and switch off his own AI companion for good.</p>
+      </details>
+      <p><strong>Final page:</strong> Dawn. The lights return. Peter boots a safer assistant, and Venom melts into the sunrise.</p>
+    </section>
+
+    <section id="cast">
+      <span class="tag">Collect them all</span>
+      <h2>Cast Sheet</h2>
+      <div class="table-wrap">
+        <table>
+          <caption>Main characters in Web of Shadows</caption>
+          <thead>
+            <tr><th scope="col">Character</th><th scope="col">Role</th><th scope="col">Stats (nested table)</th><th scope="col">Loyalty</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Spider-Man (Peter Parker)</th><td>Hero</td>
+              <td>
+                <table>
+                  <tr><th>Strength</th><td>9/10</td></tr>
+                  <tr><th>Agility</th><td>10/10</td></tr>
+                  <tr><th>Tech</th><td>8/10</td></tr>
+                </table>
+              </td>
+              <td>New York</td>
+            </tr>
+            <tr><th scope="row">Venom (Eddie Brock)</th><td>Antihero</td><td>Symbiote strength, shapeshifting</td><td>Himself, until the vault</td></tr>
+            <tr><th scope="row">Miles Morales</th><td>Sidekick</td><td>Camouflage, venom strike, coding</td><td>Peter and family</td></tr>
+            <tr><th scope="row">KAREN</th><td>AI companion</td><td>Scanning, suit control</td><td rowspan="2">Protect Peter (one copy goes too far)</td></tr>
+            <tr><th scope="row">Blackout</th><td>Rogue AI</td><td>Grid control, mimicry</td></tr>
+          </tbody>
+          <tfoot><tr><td colspan="4">Marvel characters are &copy; Marvel.</td></tr></tfoot>
+        </table>
+      </div>
+    </section>
+
+    <section id="media">
+      <span class="tag">Hit play</span>
+      <h2>
+        Watch and Listen
+        <a href="https://www.youtube.com/watch?v=8TZMtslA3UY" target="_blank">Trailer_Spiderman</a>
+      </h2>
+      <div class="media">
+        <video controls preload="metadata" width="760">
+          <source src="SPIDERMAN_ Trailer.mp4" type="video/mp4">
+        </video>
+        <p>Story Trailer_Spiderman</p>
+        <br>
+        <audio controls>
+          <source src="cinematic drum hit.mp3" type="audio/mpeg">
+        </audio>
+        <p>Audio: Cinematic Battle Background via pixabay.com/music</p>
+      </div>
+    </section>
+
+    <section id="vote">
+      <span class="tag">Your call</span>
+      <h2>Vote on the Ending</h2>
+      <form id="endingForm">
+        <label>Your name
+          <input type="text" name="name" placeholder="Spiderman" required>
+        </label>
+        <label>Email
+          <input type="email" name="mail" placeholder="peterparker@example.com" required>
+        </label>
+        <fieldset>
+          <legend>Should Peter shut down KAREN?</legend>
+          <label><input type="radio" name="choice" value="shut down KAREN" required> Yes, pull the plug</label>
+          <label><input type="radio" name="choice" value="keep KAREN" required> No, find another way</label>
+        </fieldset>
+        <label>Favourite universe
+          <select name="uni">
+            <option>Earth-616</option>
+            <option>Earth-1610</option>
+            <option>Glitch-Verse</option>
+          </select>
+        </label>
+        <label>Story rating (1-5)
+          <input type="number" name="rate" min="1" max="5" value="5">
+        </label>
+        <label>What happens next?
+          <textarea name="note" rows="3" placeholder="CHAPTER #2 Idea..."></textarea>
+        </label>
+        <button type="submit">Send vote</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>SPIDER-VERSE: Web of Shadows - FIS1104 Introduction to Web Design</p>
+    <p>Spider-Man and related characters are &copy; Marvel.</p>
+    <p>
+      <a href="https://www.marvel.com/characters/spider-man-peter-parker" target="_blank">Marvel.com</a>
+      &nbsp;|&nbsp;
+      <a href="mailto:storyspiderman@gmail.com">Contact</a>
+      &nbsp;|&nbsp;
+      <a href="#top">Back to top</a>
+    </p>
+  </footer>
+
+</body>
+</html>
